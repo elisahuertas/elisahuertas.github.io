@@ -1,0 +1,85 @@
+body{
+
+	/*background-color: red;-->*/ 
+	background-color: rgb(255,10,100); /* 0 -255 values*/
+	background-image: url(../images/IMG_0079.JPG);
+	background-repeat: no-repeat; /*if the backgorund image is small it stops repeating it across*/
+	background-position: 50% 50%;
+	font-family: helvetica, arial,sans-serif;
+
+}
+
+.main{
+
+	max-width: 600px;
+	/*background: white;*/
+	background:rgba(255,255,255,0.85); /*rgba for translucid backgrounds*/
+	margin: 0 auto; /*centering the image in the middle */
+	padding: 20px; /* distance from left margin*/
+	border-radius: 40px; /*rounding the cornes*/
+	box-shadow: 0 0 10px 10px red /*shadow aroung the element. It uses five values*/
+}
+
+
+h1{
+	text-align:center;
+	font-size: 50px;
+	text-shadow: 0 0 5px magenta;
+	font-family: 'Lakki Reddy', cursive;
+}
+
+h2 {
+
+	text-align: center;
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+}
+
+
+
+h3:hover{
+	cursor:pointer;
+	text-decoration: underline;
+}
+
+h3:after{
+	float: right;
+	content: '↑';
+}
+
+h3.open:after{
+	content: '↓';
+}
+
+img {
+	display:block;
+	margin: 0 auto;
+	border-radius: 50%;
+	border: 20px dashed silver; /*solid, dotted or dashed*/
+	transition: transform 1s;
+}
+
+img:hover{
+/*transform: rotateZ(180deg);*/
+transform: rotateZ(1800deg) scale(1.5); /*  this function rotale needs line 43 transition */
+}
+
+p,
+ul,
+ol {
+	line-height: 1.6; /*this config applies to all elements listed above: p, ul, ol*/
+	list-style: none;
+}
+
+a{ /*links to twitter and facebook*/
+	color: silver;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover{
+	text-decoration: underline;
+	color: #ffaaee
+
+};
